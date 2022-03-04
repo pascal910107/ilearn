@@ -68,17 +68,10 @@ a {
 .nav > li {
   float: left;
 }
-.nav > li:hover {
-  background-color: white;
-}
 .nav > li > a {
-  padding: 0 0 0 4px;
+  padding-left: 22px;
   font-size: 14px;
   font-family: Verdana;
-  margin-left: 18px;
-}
-.nav > li > a:hover {
-  color: #99000f;
 }
 .nav > li > a::after {
   content: "";
@@ -112,6 +105,7 @@ a {
 }
 .nav ul {
   position: absolute;
+  display: none;
   top: 40px;
   padding: 5px 0px 5px 0;
   border: 1px solid #99000f;
@@ -134,9 +128,6 @@ a {
   padding-right: 24px;
   cursor: pointer;
 }
-.nav ul li:hover {
-  background-color: #943b21;
-}
 .nav ul a {
   float: none;
   display: inline-block;
@@ -149,10 +140,7 @@ a {
   font-family: Verdana;
   white-space: nowrap;
 }
-.nav ul a:hover {
-  color: white;
-}
-.nav ul a::before {
+.nav .flang a::before {
   content: "";
   float: left;
   display: block;
@@ -164,7 +152,7 @@ a {
   width: 18px;
   height: 18px;
 }
-.nav ul a:hover::before {
+.nav .flang a:hover::before {
   background-image: url("./1608752_language_icon (2).png");
 }
 .login {
@@ -201,6 +189,7 @@ a {
   position: relative;
   height: 378px;
   padding: 7px 20px;
+  overflow: hidden;
 }
 .circle {
   position: absolute;
@@ -217,12 +206,12 @@ a {
   width: 10px;
   height: 10px;
   margin-left: 5px;
-  background-color: #30add1;
   border-radius: 50%;
+  background-color: #30add1;
 }
-/*JS*/
-.circle .active {
-  background-color: #217a94;
+.active {
+  transition: background-color 1s;
+  background-color: #217a94 !important;
 }
 .cont {
   padding: 10px 0 0 0;
@@ -235,6 +224,9 @@ a {
   height: 60px;
   border-radius: 50%;
   cursor: pointer;
+  z-index: 5;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 1;
 }
 .prev:hover {
   background-image: url("./213212_f137_icon (1).png");
@@ -242,17 +234,23 @@ a {
 .next:hover {
   background-image: url("./213212_f137_icon (1) - 複製.png");
 }
+.prevbig,
+.nextbig {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(5);
+  opacity: 0;
+}
 .prev {
   left: 16px;
   background-image: url("./213212_f137_icon.png");
-  background-size: 74px 74px;
+  background-size: 70px 70px;
   background-position: -7px -7px;
   background-repeat: no-repeat;
 }
 .next {
   right: 16px;
   background-image: url("./213212_f137_icon - 複製.png");
-  background-size: 74px 74px;
+  background-size: 70px 70px;
   background-position: -7px -7px;
   background-repeat: no-repeat;
 }
@@ -264,25 +262,33 @@ a {
   padding: 0 0 0 81.2px;
 }
 .bleft li {
-  display: table-cell;
+  display: none;
   vertical-align: middle;
+  width: 100%;
 }
 .bleft h4 {
   margin: 10px 0;
   color: #000;
+  line-height: 32px;
   font-size: 32px;
   font-weight: 700;
 }
-.bleft p {
+.bleft p,
+.bleft b {
   margin: 0 0 10px;
   line-height: 1;
   font-size: 20px;
 }
 .bright {
   float: right;
+  position: absolute;
+  right: 20px;
   width: 664.25px;
   height: 368px;
   padding: 0 33.2125px;
+}
+.bright li {
+  display: none;
 }
 .bright a {
   text-align: center;
@@ -293,6 +299,27 @@ a {
   width: 608px;
   height: 349px;
   box-shadow: 0 0 8px #222;
+  background-color: white;
+}
+.img10 {
+  width: 613.83px !important;
+  height: 348.8px !important;
+}
+.img14 {
+  position: relative;
+  left: 60px;
+  width: 487.33px !important;
+}
+.img15 {
+  position: relative;
+  left: 74px;
+  width: 460px !important;
+}
+.img16 {
+  position: relative;
+  top: 74px;
+  width: 613.83px !important;
+  height: 203.63px !important;
 }
 .page-content {
   margin-top: 10px;
@@ -507,3 +534,43 @@ tr a:hover {
 .footer-text2 a:hover {
   color: white;
 }
+
+/* .prev,
+.next {
+  position: absolute;
+  top: 134px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 1;
+}
+.prevbig,
+.nextbig {
+  transition: transform 0.5s, opacity 0.5s;
+  transform: scale(5);
+  opacity: 0;
+}
+.disappear-left {
+  opacity: 0;
+  transform: translateX(-1200px);
+  transition: all 1s;
+}
+.appear-left {
+  transition: all 1s;
+  transform: translateX(-1200px);
+}
+
+.appear-right {
+  transform: translateX(-1200px);
+  transition: all 1s;
+}
+
+.left-tomiddle1 {
+  transform: translateX(1200px);
+}
+.left-tomiddle2 {
+  display: none !important;
+} */
