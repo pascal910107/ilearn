@@ -15,7 +15,7 @@
                 <img class="wrapper" src="https://ilearn2.fcu.edu.tw/pluginfile.php/1/theme_essential/logo/1645687546/banner6.jpg">
             </a>
         </div>
-        <div class="navbar">
+        <div class="navbar" id="navbar">
             <div class="navbar-in wrapper">
                 <a class="f015" href="#">首頁</a>
                 <div>
@@ -596,6 +596,19 @@
                 }
             }
         }
+        window.addEventListener('scroll',function(){
+            var scrollTop = 0;
+            if (document.documentElement && document.documentElement.scrollTop) {
+                scrollTop = document.documentElement.scrollTop;
+            } else if (document.body) {
+                scrollTop = document.body.scrollTop;
+            }
+            if(scrollTop){
+                document.querySelector('#navbar').className = 'navbar-active';
+            }else{
+                document.querySelector('#navbar').className = 'navbar';
+            }
+        })
     </script>
 </body>
 </html>
