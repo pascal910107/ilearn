@@ -64,7 +64,7 @@ a {
   content: "";
   float: left;
   display: block;
-  background-image: url("./212954_f015_icon.png");
+  background-image: url("./img/212954_f015_icon.png");
   background-size: 26px 26px;
   background-position: -3px 6px;
   background-repeat: no-repeat;
@@ -88,7 +88,7 @@ a {
   content: "";
   float: right;
   display: block;
-  background-image: url("./213127_f0da_icon.png");
+  background-image: url("./img/213127_f0da_icon.png");
   background-size: 20px 18px;
   background-position: -3px 12px;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ a {
   height: 40px;
 }
 .nav > li > a:hover::after {
-  background-image: url("./213127_f0da_icon\ -\ 複製.png");
+  background-image: url("./img/213127_f0da_icon\ -\ 複製.png");
   background-size: 16px 18px;
   background-position: 0px 10px;
 }
@@ -104,7 +104,7 @@ a {
   content: "";
   float: left;
   display: block;
-  background-image: url("./212967_f024_icon.png");
+  background-image: url("./img/212967_f024_icon.png");
   background-size: 17px 17px;
   background-position: -2px 12px;
   background-repeat: no-repeat;
@@ -112,7 +112,7 @@ a {
   height: 40px;
 }
 .nav .f024:hover::before {
-  background-image: url("./212967_f024_icon (2).png");
+  background-image: url("./img/212967_f024_icon (2).png");
 }
 .nav ul {
   position: absolute;
@@ -156,7 +156,7 @@ a {
   float: left;
   display: block;
   margin-right: 5px;
-  background-image: url("./1608752_language_icon.png");
+  background-image: url("./img/1608752_language_icon.png");
   background-size: 16px 16px;
   background-position: -2px 0px;
   background-repeat: no-repeat;
@@ -164,7 +164,7 @@ a {
   height: 18px;
 }
 .nav .flang a:hover::before {
-  background-image: url("./1608752_language_icon (2).png");
+  background-image: url("./img/1608752_language_icon (2).png");
 }
 .login {
   float: right;
@@ -186,7 +186,7 @@ a {
   content: "";
   float: left;
   display: block;
-  background-image: url("./213069_f090_icon.png");
+  background-image: url("./img/213069_f090_icon.png");
   background-size: 18px 18px;
   background-position: -2px 12px;
   background-repeat: no-repeat;
@@ -194,7 +194,7 @@ a {
   height: 40px;
 }
 .login a:hover::before {
-  background-image: url("./213069_f090_icon\ \(2\).png");
+  background-image: url("./img/213069_f090_icon\ \(2\).png");
 }
 .prev,
 .next {
@@ -211,19 +211,19 @@ a {
 .prevbig,
 .nextbig {
   transition: transform 0.5s, opacity 0.5s;
-  transform: scale(5);
+  transform: scale(2);
   opacity: 0;
 }
 .prev {
   left: 174px;
-  background-image: url("./213212_f137_icon.png");
+  background-image: url("./img/213212_f137_icon.png");
   background-size: 70px 70px;
   background-position: -7px -7px;
   background-repeat: no-repeat;
 }
 .next {
   right: 174px;
-  background-image: url("./213212_f137_icon - 複製.png");
+  background-image: url("./img/213212_f137_icon - 複製.png");
   background-size: 70px 70px;
   background-position: -7px -7px;
   background-repeat: no-repeat;
@@ -409,7 +409,7 @@ a {
   content: "";
   float: left;
   display: block;
-  background-image: url("./212941_f007_icon.png");
+  background-image: url("./img/212941_f007_icon.png");
   background-size: 26px 26px;
   background-position: -4px -2px;
   background-repeat: no-repeat;
@@ -424,7 +424,7 @@ a {
   content: "";
   float: left;
   display: block;
-  background-image: url("./213227_f147_icon.png");
+  background-image: url("./img/213227_f147_icon.png");
   background-size: 17px 17px;
   background-position: -2px 1px;
   background-repeat: no-repeat;
