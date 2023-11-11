@@ -24,7 +24,7 @@ a {
   margin: 0 auto;
 }
 .banner {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   background-image: url(https://ilearn2.fcu.edu.tw/theme/image.php/essential/theme/1645687537/bg/header);
 }
 .banner img {
@@ -418,7 +418,7 @@ a {
 }
 .l-i-headr {
   float: right;
-  padding: 3px 15px;
+  padding: 3px 0px;
 }
 .l-i-headr ::before {
   content: "";
@@ -436,12 +436,14 @@ a {
   padding: 4px 0;
 }
 .l-i-footer {
+  width: 100%;
+  height: 30px;
   display: block;
   margin: 10px 0;
   border: 1px solid #30add1;
   border-radius: 4px;
-  padding: 4px 12px;
   text-align: center;
+  overflow: hidden;
 }
 .l-i-content label {
   display: block;
